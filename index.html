@@ -36,5 +36,15 @@
         </div>
       </div>
     </div>
+
+    <script src="jquery.js"></script>
+    <script>
+      $( document ).ready(function() {
+        //read json local file
+        $.getJSON("stays.json", function(json) {
+          console.log(json); // this will show the info it in console
+      });
+      });
+    </script>
   </body>
 </html>
